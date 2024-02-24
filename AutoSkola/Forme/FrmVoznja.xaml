@@ -1,0 +1,22 @@
+﻿<Window x:Class="AutoSkola.Forme.FrmVoznja"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoSkola.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj / Izmeni Casove Voznje" Height="320" Width="320">
+    <Grid>
+        <Label Content="Kandidat:" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top"/>
+        <Label Content="Instruktor:" HorizontalAlignment="Left" Margin="30,70,0,0" VerticalAlignment="Top"/>
+        <Label Content="Broj Casova:" HorizontalAlignment="Left" Margin="30,110,0,0" VerticalAlignment="Top"/>
+
+        <TextBox x:Name="txtCasovi" HorizontalAlignment="Left" Margin="160,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cbKandidat" HorizontalAlignment="Left" Margin="160,35,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="kandidatID" SelectedValuePath="kandidatID"/>
+        <ComboBox x:Name="cbInstruktor" HorizontalAlignment="Left" Margin="160,75,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="instruktorID" SelectedValuePath="instruktorID"/>
+
+
+        <Button x:Name="btnSacuvaj" Content="Sacuvaj" HorizontalAlignment="Left" Margin="65,240,0,0" VerticalAlignment="Top" Click="BtnSacuvaj_Click" Background="AliceBlue"/>
+        <Button x:Name="btnOtkazi" Content="Otkazi" HorizontalAlignment="Left" Margin="200,240,0,0" VerticalAlignment="Top" Click="BtnOtkazi_Click" Background="AliceBlue"/>
+    </Grid>
+</Window>

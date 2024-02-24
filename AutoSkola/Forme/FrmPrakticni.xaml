@@ -1,0 +1,21 @@
+﻿<Window x:Class="AutoSkola.Forme.FrmPrakticni"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoSkola.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj / Izmeni Rezultate Prakticnog Ispita" Height="350" Width="320">
+    <Grid>
+        <Label Content="Polozio Ispit:" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top"/>
+        <Label Content="Broj Bodova:" HorizontalAlignment="Left" Margin="30,110,0,0" VerticalAlignment="Top"/>
+        <Label Content="Broj Pokusaja:" HorizontalAlignment="Left" Margin="30,140,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBodovi" HorizontalAlignment="Left" Margin="160,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPokusaji" HorizontalAlignment="Left" Margin="160,145,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+
+        <Button x:Name="btnSacuvaj" Content="Sacuvaj" HorizontalAlignment="Left" Margin="70,260,0,0" VerticalAlignment="Top" Click="BtnSacuvaj_Click"/>
+        <Button x:Name="btnOtkazi" Content="Otkazi" HorizontalAlignment="Left" Margin="200,260,0,0" VerticalAlignment="Top" Click="BtnOtkazi_Click"/>
+        <CheckBox x:Name="chbPolozio" HorizontalAlignment="Left" Margin="160,35,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.873,0.971"/>
+    </Grid>
+</Window>

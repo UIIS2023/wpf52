@@ -1,0 +1,19 @@
+﻿<Window x:Class="AutoSkola.Forme.FrmPrvaPomoc"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoSkola.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj / Izmeni Status Prve Pomoci" Height="320" Width="350">
+    <Grid>
+        <Label Content="Polozen Kurs Prve Pomoci:" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top"/>
+        <Label Content="Stepen Prve Pomoci:" HorizontalAlignment="Left" Margin="30,80,0,0" VerticalAlignment="Top"/>
+
+        <TextBox x:Name="txtStepen" HorizontalAlignment="Left" Margin="200,85,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+        <Button x:Name="btnSacuvaj" Content="Sacuvaj" HorizontalAlignment="Left" Margin="85,230,0,0" VerticalAlignment="Top" Click="BtnSacuvaj_Click" Background="AliceBlue"/>
+        <Button x:Name="btnOtkazi" Content="Otkazi" HorizontalAlignment="Left" Margin="210,230,0,0" VerticalAlignment="Top" Click="BtnOtkazi_Click" Background="AliceBlue"/>
+        <CheckBox x:Name="chbIspit" HorizontalAlignment="Left" Margin="250,35,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

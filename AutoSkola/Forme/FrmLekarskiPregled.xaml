@@ -1,0 +1,16 @@
+﻿<Window x:Class="AutoSkola.Forme.FrmLekarskiPregled"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoSkola.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj / Izmeni Status Lekarskog Pregleda" Height="280" Width="280">
+    <Grid>
+        <Label Content="Polozio Lekarski Pregled:" HorizontalAlignment="Left" Margin="26,40,0,0" VerticalAlignment="Top"/>
+
+        <Button x:Name="btnSacuvaj" Content="Sacuvaj" HorizontalAlignment="Left" Margin="55,200,0,0" VerticalAlignment="Top" Click="BtnSacuvaj_Click" Background="AliceBlue"/>
+        <Button x:Name="btnOtkazi" Content="Otkazi" HorizontalAlignment="Left" Margin="180,200,0,0" VerticalAlignment="Top" Click="BtnOtkazi_Click" Background="AliceBlue"/>
+        <CheckBox x:Name="chbPregled" VerticalAlignment="Top" RenderTransformOrigin="1.986,3.6" Margin="224,46,-29,0"/>
+    </Grid>
+</Window>
